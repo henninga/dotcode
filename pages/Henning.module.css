@@ -1,0 +1,63 @@
+.cv {
+  display: grid;
+  grid-template-columns: auto minmax(0, 250px) minmax(0, 65ch) auto;
+  gap: 1.5rem;
+}
+
+@media print {
+  .cv {
+    grid-template-columns: auto minmax(0, 200px) minmax(0, 65ch) auto;
+  }
+}
+
+.key-info {
+  grid-column: 2 / 3;
+}
+
+.key-info a {
+  text-decoration: none;
+  color: var(--page-font-color);
+}
+
+.contact svg {
+  margin-inline-end: 1rem;
+}
+
+.main {
+  grid-column: 3 / 4;
+}
+
+.project {
+}
+
+.project-title {
+  margin-block: 0;
+}
+
+.project-date {
+  display: inline-flex;
+  align-items: center;
+}
+
+.project-date:before {
+  content: "•";
+  font-size: 3rem;
+  line-height: 0;
+  margin-right: 0.5rem;
+}
+
+.project-header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  margin-top: 0.3rem;
+}
+
+.education > li > div {
+  line-height: 1.25;
+}
