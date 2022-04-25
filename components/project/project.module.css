@@ -1,0 +1,26 @@
+.project {
+}
+
+.position {
+  margin-block: 0;
+}
+
+.project-date {
+  display: inline-flex;
+  align-items: center;
+}
+
+.project-date:before {
+  content: "•";
+  font-size: 3rem;
+  line-height: 0;
+  margin-right: 0.5rem;
+}
+
+.header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
