@@ -68,8 +68,8 @@ jobs:
         working-directory: nextjs-app
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-        working-directory: nextjs-app
         with:
+          working-directory: nextjs-app
           path: ./dist
 
   # Deployment job
