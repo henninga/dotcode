@@ -64,8 +64,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Build with Next.js
+        working-director: nextjs-app
         run: pnpm build
       - name: Upload artifact
+        working-director: nextjs-app
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
